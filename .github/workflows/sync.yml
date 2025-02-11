@@ -1,8 +1,7 @@
 name: Code SYNC
 on:
-  workflow_run:
-    workflows: BuildAndDeploy # 需要监听的流程名字
-    types: completed
+  workflow_dispatch:
+
 
 jobs:
   push-to-mirror:
